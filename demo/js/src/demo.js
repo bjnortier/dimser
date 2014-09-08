@@ -10,18 +10,18 @@ new Trackball([viewport]);
 var boxGeom = new THREE.BoxGeometry(50,150,30);
 var boxMat1 = new THREE.MeshLambertMaterial({
   color: 0x0000ff,
-  transparent: true,
-  opacity: 0.2,
+  // transparent: true,
+  // opacity: 0.2,
 });
-// var boxMat2 = new THREE.MeshLambertMaterial({
-//   color: 0x006600,
-//   wireframe: true,
-// });
+var boxMat2 = new THREE.MeshBasicMaterial({
+  color: 0x006600,
+  wireframe: true,
+});
 viewport.scene.add(THREE.SceneUtils.createMultiMaterialObject(
   boxGeom,
   [
     boxMat1,
-    // boxMat2,
+    boxMat2,
   ]));
 
 var dimser = require('../../..');

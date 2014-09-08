@@ -25,11 +25,11 @@ module.exports = function(container) {
     camera.lookAt(new THREE.Vector3(0,0,0));
 
     that.scene = new THREE.Scene();
-    that.scene.add( new THREE.AmbientLight(0x101010) );
+    // that.scene.add( new THREE.AmbientLight(0x101010) );
 
     light = new THREE.PointLight( 0xffffff, 1.5 );
     light.position.set(0, 0, 2000);
-    that.scene.add( light );
+    that.scene.add(light);
 
     var xMaterial = new THREE.LineBasicMaterial({color: 0x00ff00, opacity: 0.5});
     var yMaterial = new THREE.LineBasicMaterial({color: 0x0000ff, opacity: 0.5});
