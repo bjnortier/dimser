@@ -1,0 +1,36 @@
+{
+  "name": "dimser",
+  "version": "0.1.0",
+  "description": "A library to generate engineering drawing dimensions in 3D",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bjnortier/dimser.git"
+  },
+  "keywords": [
+    "Dimensions",
+    "3D",
+    "Engineering"
+  ],
+  "author": "Ben Nortier <ben@bjnortier.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjnortier/dimser/issues"
+  },
+  "homepage": "https://github.com/bjnortier/dimser",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-webpack": "^1.0.8",
+    "webpack": "^1.4.0-beta4",
+    "webpack-dev-server": "^1.6.4"
+  },
+  "browser": {
+    "jquery": "./demo/js/vendor/jquery-2.1.1.min.js",
+    "three": "./demo/js/vendor/three.min.js"
+  }
+}
